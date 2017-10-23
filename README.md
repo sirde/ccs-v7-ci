@@ -8,12 +8,12 @@ Dockerfile to build a code composer studio v7 container for continues integratio
 - CC3200SDK_1.3.0 folder which you can get by running the sdk exe on windows.
 
 
-#To use it:
-
-##build
+# To use it:
+ 
+## build
 docker build -t ccs .
 
-##run
+## run
 docker run -ti -v C:\\workspace\\roomzscreen:/workdir ccs /bin/bash
 
 ## import project

@@ -76,7 +76,7 @@ COPY ti_replace_variable.py /scripts/ti_replace_variable.py
 # TODO: do this in the same step as the ADD and RUN install to remove 800MB in the image.
 #RUN rm -r /ccs_install
 
-RUN PATH=$PATH:/opt/ti/ccsv7/eclipse
+ENV PATH="/opt/ti/ccsv7/eclipse:${PATH}"
 
 # workspace folder for CCS
 RUN mkdir /workspace
